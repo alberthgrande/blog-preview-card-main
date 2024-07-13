@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --primary-yellow: hsl(47, 88%, 63%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 50%);
+  --neutral-black: hsl(0, 0%, 7%);
+
+  --font-size-16px: 16px;
+
+  --font-family: "Figtree", sans-serif;
+  --font-weights-500: 500;
+  --font-weights-800: 800;
+}
