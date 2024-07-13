@@ -23,6 +23,14 @@ body {
   margin: 0 1.5rem;
   padding: 1.5rem;
   border-radius: 20px;
+
+  box-shadow: 10px 10px 0px 0px var(--neutral-black);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(0.2);
+  box-shadow: 15px 15px 0px 0px var(--neutral-black);
 }
 
 .card-img img {
@@ -61,13 +69,23 @@ a:visited {
 .card-content_info {
   color: var(--neutral-grey);
   font-weight: var(--font-weights-500);
-  font-size: 14px;
+}
+
+.card-content_topic a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--neutral-black);
+}
+
+.card-content_topic a:hover,
+a:active {
+  color: var(--primary-yellow);
 }
 
 .card-content_topic {
   font-weight: var(--font-weights-800);
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .card-content_user {
@@ -85,13 +103,24 @@ a:visited {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 390px) {
+  .card-content_publish {
+    font-size: 12px;
+  }
+  .card-content_topic {
+    font-size: 1.25rem;
+  }
+  .card-content_info {
+    color: var(--neutral-grey);
+    font-weight: var(--font-weights-500);
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 375px) {
   .card {
     width: 100%;
     max-width: 375px;
-  }
-  .card-content_topic {
-    font-size: 1.25rem;
   }
 }
 .attribution {
